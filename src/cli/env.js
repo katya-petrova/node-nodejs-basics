@@ -1,7 +1,7 @@
 const parseEnv = () => {
-  let firstVal = `RSS_${process.env.RSS_foo}`;
-  //   let secondVal = `RSS_${process.env.name2}`
-  console.log(firstVal);
+  let firstVal = process.env.RSS_foo;
+  let secondVal = process.env.RSS_bar;
+  console.log(`RSS_foo=${firstVal}; RSS_bar=${secondVal}`);
 };
 
 parseEnv();
