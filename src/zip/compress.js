@@ -4,6 +4,7 @@ const compress = async () => {
   const zip = zlib.createGzip();
 
   const read = fs.createReadStream('src/zip/files/fileToCompress.txt');
+
   const write = fs.createWriteStream('src/zip/files/archive.gz');
 
   read.pipe(zip).pipe(write);
